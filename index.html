@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <div class="result"></div>
-    <button class="options" data-choice="Rock">Rock</button>
-    <button class="options" data-choice="Paper">Paper</button>
-    <button class="options" data-choice="Scissors">Scissors</button>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="score-tracker">
+            <div class="player-score">
+                <i class="fas fa-user"></i> Player: <span id="player-score">0</span>
+            </div>
+            <div class="computer-score">
+                <i class="fas fa-robot"></i> Computer: <span id="computer-score">0</span>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="choices">
+                <button class="options" data-choice="Rock">✊</button>
+                <button class="options" data-choice="Paper">✋</button>
+                <button class="options" data-choice="Scissors">✌️</button>
+            </div>
+            <div class="result"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

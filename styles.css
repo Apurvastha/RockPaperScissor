@@ -1,32 +1,100 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.container {
+    background: linear-gradient(135deg, #c9f5d9, #8ce2b1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
     text-align: center;
-    background-color: #f9f9f9;
 }
 
 h1 {
-    color: #333;
+    color: #1a5f7a;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.score-tracker {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.player-score, .computer-score {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #1a5f7a;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .options {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 18px;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    font-size: 40px;
+    padding: 20px;
     border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .options:hover {
-    background-color: #FF6347;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a5f7a;
     margin-top: 20px;
-    font-size: 20px;
-    color: #333;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choices-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.player-choice, .computer-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1a5f7a;
 }
